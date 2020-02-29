@@ -56,6 +56,13 @@ namespace HelloWorld
                     Console.ReadLine();
                 }
             }
+            Console.WriteLine($"What's your favorite color, {userName}?");
+            string favColor = Console.ReadLine();
+            // Creates a random object
+            Random rand = new Random();
+            // selects random index from array
+            int index = rand.Next(animals.Length);
+            Console.WriteLine($"Would you like to have a {favColor} {animals[index]}?");
         Console.ReadKey();
         }
     }
